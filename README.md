@@ -5,7 +5,6 @@
 
 ## antes del proyecto:
 
-
 ### composer
  Composer es una herramienta que facilita la gestion 
  de las depencias en proyectos PHP.
@@ -72,20 +71,17 @@
         DB_USERNAME=
         DB_PASSWORD=
 
-
-
-
 ## Durante
 
-       composer create-project --prefer-dist laravel/laravel proyecto-0 "10.*"
+### Proyecto
 
-       composer require laravel/breeze --dev
+        composer create-project --prefer-dist laravel/laravel proyecto-0 "10.*"
+
+        composer require laravel/breeze --dev
      
-       php artisan breeze:install -h
+        php artisan breeze:install -h
 
-       php artisan breeze:install blade --dark
-
-## Proyecto
+        php artisan breeze:install blade --dark
 
 ### Tailwind: 
 
@@ -124,5 +120,27 @@
 
         npm run dev
 
+## Primeros pasos
+ 
+ estos son comandos que usaremos mucho
 
+ bueno ahora podemos correr
 
+        npm run dev
+        php artisan serve
+
+ para migrar
+
+        php artisan migrate
+ 
+ Ahora podremos crear el modelo y control
+
+        php artisan make:controller TaskController --resource --model=Task
+
+### Vistas
+
+ Iniciando
+
+        php artisan make:controller TaskController --resource --model=Task
+
+ Ahora podemos pasar a las vistas
