@@ -133,9 +133,15 @@
 
         php artisan migrate
  
+ Otra cosa que podemos hacer es crear un usuario desde nuestro proyecto web para vamos a registrar en la esquina superior de la derecha
+
+
  Ahora podremos crear el modelo y control
 
         php artisan make:controller TaskController --resource --model=Task
+
+
+
 
 ### Vistas
 
