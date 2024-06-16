@@ -87,8 +87,42 @@
 
 ## Proyecto
 
+### Tailwind: 
 
+ Instalar:
 
+        npm install -D tailwindcss postcss autoprefixer
+
+ Crear archivos:
+ 
+        npx tailwindcss init -p
+
+ Configurar template
+ spw/tailwind.config.js
+
+        /** @type {import('tailwindcss').Config} */
+        module.exports = {
+        content: [
+                "./resources/**/*.blade.php",
+                "./resources/**/*.js",
+                "./resources/**/*.vue",
+        ],
+        theme: {
+                extend: {},
+        },
+        plugins: [],
+        }
+
+ Add the Tailwind directives to your CSS
+ spw/resources/css/app.css
+
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+ Despues de esto puedes Correrla 
+
+        npm run dev
 
 
 
