@@ -205,6 +205,8 @@
 
 ## dashboard
 
+### Visitantes y Usuarios
+
  deberiamos de empezar por hacer unos cambios primero *views/layouts/navigation.blade.php*
 
        <!-- Logo -->
@@ -215,5 +217,5 @@
 
  ese pequeño cambio es para tener acceso a la vista para invitados desde el dashboard que
  es solo para usuarios
- 
-  
+
+### 
