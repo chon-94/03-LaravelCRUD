@@ -140,9 +140,6 @@
 
         php artisan make:controller TaskController --resource --model=Task
 
-
-
-
 ### Vistas
 
  Iniciando
@@ -206,4 +203,17 @@
  debemos de hacer unos ajustes creamos una carpeta web que sera para guardar las vistas estaticas y en app la carpeta
  app agregaremos webapp que sera una platilla jejeje justo en esta parte recomiendo ir a */web/about.blade.php* *web/contacto.blade.php* *web/welcome.blade.php* *webapp.blade.php* Ah y recodar que dashboard no deberiamos moverla de momento 
 
+## dashboard
 
+ deberiamos de empezar por hacer unos cambios primero *views/layouts/navigation.blade.php*
+
+       <!-- Logo -->
+       <div class="shrink-0 flex items-center">
+              <a href="{{ route('welcome') }}" class="text-white">FEMA Ingenieros</a>
+              </a>
+       </div>
+
+ ese pequeño cambio es para tener acceso a la vista para invitados desde el dashboard que
+ es solo para usuarios
+ 
+  
