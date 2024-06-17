@@ -218,4 +218,4 @@
  ese pequeño cambio es para tener acceso a la vista para invitados desde el dashboard que
  es solo para usuarios
 
-### 
+### Middleware
