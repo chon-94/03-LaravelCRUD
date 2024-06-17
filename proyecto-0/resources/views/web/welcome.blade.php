@@ -26,7 +26,7 @@
 
             <!-- NOMBRE Y LOGO -->
                 <div class="flex w-full md:w-1/2 justify-center md:justify-start font-extrabold">
-                    <a href="#" class="text-black">FEMA Ingenieros</a>
+                    <a href="{{ route('welcome') }}" class="text-black">FEMA Ingenieros</a>
                 </div>
             <!-- NOMBRE Y LOGO -->
 
@@ -34,19 +34,14 @@
             <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
                 <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
 
-                    <!-- Servicios -->
-                    <li class="mr-5">
-                        <a href="#" class="px-4 text-black">Servicios</a>
-                    </li>
-
                     <!-- Contacto -->
                     <li class="mr-5">
-                        <a href="#" class="px-4 text-black">Contacto</a>
+                        <a href="{{ route('contacto') }}" class="px-4 text-black">Contacto</a>
                     </li>
 
                     <!-- Acerca de -->
                     <li class="mr-5">
-                        <a href="#" class="px-4 text-black">Acerca de</a>
+                        <a href="{{ route('about') }}" class="px-4 text-black">about</a>
                     </li>
 
                 </ul>

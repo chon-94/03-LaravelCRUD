@@ -149,4 +149,61 @@
 
         php artisan make:controller TaskController --resource --model=Task
 
- Ahora podemos pasar a las vistas
+ Ahora podemos pasar a las vistas primero ahremos unas vistas simplres  para entender el manejo de las rutas
+
+ primero tenemos que crear un controlaor 
+
+
+ para el about 
+
+        php artisan make:controller AboutController
+
+ y lo configuraos de la siguiente manera
+
+        <?php
+
+        namespace App\Http\Controllers;
+
+        use Illuminate\Http\Request;
+
+        class AboutController extends Controller
+        {
+              public function about()
+              {
+                     return view('web.about');
+              }
+        }
+
+
+ para el contacto
+
+        php artisan make:controller ContactoController
+
+ y lo configuraos de la siguiente manera
+
+        <?php
+
+        namespace App\Http\Controllers;
+
+        use Illuminate\Http\Request;
+
+        class ContactoController extends Controller
+        {
+              public function contacto()
+              {
+                     return view('web.contacto');
+              }
+        }
+
+ por otro lado tenermo a *proyecto-0/routes/web.php*
+ aca debemos de hacer un par de ajustes para poder usar ya nuestras vistas
+
+        Route::get('/', function () {return view('web.welcome');})->name('welcome');
+        Route::get('/about', function () {return view('web.about');})->name('about');
+        Route::get('/contacto', function () {return view('web.contacto');})->name('contacto');
+
+ ahora creamos nuetros archivos de views... teniendo en cuent que tenemos muchos archivos y algunas carpetas
+ debemos de hacer unos ajustes creamos una carpeta web que sera para guardar las vistas estaticas y en app la carpeta
+ app agregaremos webapp que sera una platilla jejeje justo en esta parte recomiendo ir a */web/about.blade.php* *web/contacto.blade.php* *web/welcome.blade.php* *webapp.blade.php* Ah y recodar que dashboard no deberiamos moverla de momento 
+
+
